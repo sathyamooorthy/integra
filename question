@@ -1,0 +1,264 @@
+
+Simple Code Questions	2
+1. Login to MyProgrammingLab	2
+2. How to create Simple Code Questions on MyProgrammingLab	2
+3. C++ Sample Question (Level of difficulty: Simple)	3
+4. Java Sample Question (Level of difficulty: Simple)	4
+5. C++/Java Sample Question (Level of difficulty: Hard)	5
+6. C++/Java Sample Question (Level of difficulty: Hard)	6
+7. Python Sample Question (Level of difficulty: Moderate)	7
+Accessible Animation Request for Sample	8
+
+
+
+
+
+
+
+
+ 
+Simple Code Questions
+
+1. Login to MyProgrammingLab
+
+URL: myprogramminglab.com
+Username:
+Password: 
+
+
+
+
+
+
+2. How to create Simple Code Questions on MyProgrammingLab
+
+Link to Help Documentation.
+
+Vendor to login to myprogramminglab using the username and password created for them, and create C++, Java, and Python questions mentioned below.
+
+
+
+
+
+
+
+ 
+3. C++ Sample Question (Level of difficulty: Simple)
+(Question number 0002)  Create the following C++ question. 
+
+Question: Write a cout statement that displays "One Two Three".
+Answer: cout << "One Two Three";
+
+
+
+
+
+ 
+4. Java Sample Question (Level of difficulty: Simple)
+(Question number 00212)  Create the following Java question. 
+
+Question: 
+The following statement attempts to create a Rectangle object by calling a no-arg constructor, but there
+is an error. Correct this issue by rewriting the statement.
+
+Rectangle box = new Rectangle;
+
+Answer: 
+
+Rectangle box = new Rectangle();
+
+
+ 
+5. C++/Java Sample Question (Level of difficulty: Hard)
+(Question number 00282) Create the following Java question. Hint: The end user doesn't see what is the underlying code. As long as public static void myName() is accepted as the answer, it is fine. So, if you aren’t able to code this in Java, you could code it in C++.
+
+Question:
+The void method myName displays a name.
+17 _____ myName()
+18 {
+19     System.out.println("Mary Catherine Jones");
+20 }
+What should line number 17 be? The method is public and static.
+Answer: public static void myName()
+
+
+
+
+
+
+
+
+
+
+ 
+6. C++/Java Sample Question (Level of difficulty: Hard)
+(Question number 00295) Create the following Java question. Hint: The end user doesn't see what is the underlying code. As long as if(Character.toUpperCase(choice) == 'Y') is accepted as the answer, it is fine. So, if you aren’t able to code this in Java, you could code it in C++.
+
+Question:
+The following if statement determines whether choice is equal to ‘Y’ or ‘y’:
+if (choice == 'Y' || choice == 'y')
+Rewrite this statement so it makes only one comparison and does not use the || operator.
+(Hint: Use either the toUpperCase or toLowerCase method.)
+
+Answer: if(Character.toUpperCase(choice) == 'Y')
+
+
+ 
+7. Python Sample Question (Level of difficulty: Moderate)
+
+(Question number 00353) Create the following Python question.
+
+
+Question:
+
+The code below asks the user “Do you want to repeat the program or quit? (R/Q)”. A loop should repeat until the user has entered an R or Q (either uppercase or lowercase). Replace the second line with the appropriate while statement.
+
+again = input('Do you want to repeat ' + 'the program or quit? (R/Q) ')
+# What goes here?
+	again = input('Do you want to repeat the ' + 'program or quit? (R/Q) ')
+
+Answer:
+
+while again.upper() != 'R' and again.upper() != 'Q':
+
+
+
+
+
+
+ 
+Accessible Animation Request for Sample	
+
+Here is a sample fully accessible animation:
+
+https://media.pearsoncmg.com/ph/esm/0media_ecs/gaddis-java/pr4-24/24.html
+
+Create an animation for the following piece of Python code using the similar UX and format. You will have to come up with the variables, explanation, and output. Accessibility needs to work on Android TalkBack and iOS VoiceOver
+
+Python Animation 7-7 Source Code:
+
+
+1
+# This program calculates the gross pay for
+ 2
+# each of Megan's baristas.
+ 3
+
+ 4
+# NUM_EMPLOYEES is used as a constant for the
+ 5
+# size of the list.
+ 6
+NUM_EMPLOYEES = 6
+ 7
+
+ 8
+def main():
+ 9
+# Create a list to hold employee hours.
+10
+hours = [0] * NUM_EMPLOYEES
+11
+
+12
+# Get each employee's hours worked.
+13
+for index in range(NUM_EMPLOYEES):
+14
+print('Enter the hours worked by employee ', \
+15
+      index + 1, ': ', sep='', end='')
+16
+hours[index] = float(input())
+17
+
+18
+# Get the hourly pay rate.
+19
+pay_rate = float(input('Enter the hourly pay rate: '))
+20
+
+21
+# Display each employee's gross pay.
+22
+for index in range(NUM_EMPLOYEES):
+23
+gross_pay = hours[index] * pay_rate
+24
+print('Gross pay for employee ', index + 1, ': $', \
+25
+      format(gross_pay, ',.2f'), sep='')
+26
+
+27
+# Call the main function.
+28
+main()
+
+
+
+
+
+
+CODE EXPLANATION :
+
+
+# This program calculates the gross pay for
+# each of Megan's baristas.
+# NUM_EMPLOYEES is used as a constant for the
+# size of the list.				Variable: ---
+						 	Expl(Comment lines Which will not executes )
+
+NUM_EMPLOYEES = 6			 		Variable:(NUM_EMPLOYEES = 6)
+Expl:(Declares variables NUM_EMPLOYEES with       value 6)
+
+
+def main():                    		Variable: -----
+Expl (main function definition) 
+
+
+# Create a list to hold employee hours.	Variable: -----
+hours = [0] * NUM_EMPLOYEES	  		Expl(List has been created & starts from 0)
+
+
+# Get each employee's hours worked.		Variable: -----
+for index in range(NUM_EMPLOYEES):		Expl(Iterate the loop until last variable )
+
+
+
+
+print('Enter the hours worked by employee ', index + 1, ': ', sep='', end='')										Variable: -----			
+Expl(Print the statement that is given in single Quotes for each index values)
+Output (Enter the hours worked by employee)
+      
+
+hours[index] = float(input())			Variable: (float hours)
+Expl(Initialise hours & get the input value   until loop terminates)
+
+# Get the hourly pay rate.
+pay_rate = float(input('Enter the hourly pay rate: ')) 
+Variable: (float pay_load)
+Expl(Initialise pay-load variable & get input value for pay rate)
+Output (Enter the hourly pay rate) 
+
+
+# Display each employee's gross pay.
+for index in range(NUM_EMPLOYEES):		Variable: -----
+Expl(iterate the loop with respect to employee value for calculating gross pay)
+
+
+gross_pay = hours[index] * pay_rate   	Variable: (float gross-pay)
+Expl(multiply both hour and pay-rate with each   employee and stores in gross pay )
+
+
+print('Gross pay for employee ', index + 1, ': $', format(gross_pay, ',.2f'), sep='')
+Expl (Gross pay of each employee will get printed with 2  decimal places )
+ Output(Gross pay for employee 1 :$ )
+ 
+
+
+# Call the main function.
+main() 	Expl(Program execution starts at main, calls main   function )
+
+
+
